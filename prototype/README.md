@@ -32,7 +32,7 @@
 | 朝代 | 代表文物 |
 |------|---------|
 | 新石器 | 仰韶彩陶、良渚玉琮 |
-| 商周 | 后母戊鼎、四羊方尊、越王勾践剑 |
+| 商周 | 司母戊鼎、四羊方尊、越王勾践剑 |
 | 秦汉 | 秦始皇兵马俑、马踏飞燕、素纱单衣 |
 | 隋唐 | 唐三彩、昭陵六骏 |
 | 宋元 | 清明上河图、汝窑天青釉碗 |
@@ -105,8 +105,11 @@ src/
 
 | 变量 | 说明 |
 |------|------|
-| `ANTHROPIC_API_KEY` | Anthropic API 密钥（必填） |
-| `DATABASE_URL` | SQLite 数据库路径（默认 `prisma/dev.db`）|
+| `OPENAI_API_KEY` | AI 服务 API 密钥（必填） |
+| `OPENAI_BASE_URL` | API 地址（默认 `https://api.openai.com/v1`）|
+| `MODEL` | 模型名称（默认 `gpt-4o-mini`）|
+
+> 数据库无需配置，SQLite 文件已内置（`prisma/dev.db`）。
 
 ---
 

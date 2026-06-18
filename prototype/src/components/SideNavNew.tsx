@@ -8,7 +8,6 @@ export default function SideNav() {
 
   const navItems = [
     { icon: "home", label: "首页", href: "/" },
-    { icon: "account_balance", label: "文物馆", href: "/museum" },
     { icon: "chat_bubble", label: "AI 助手", href: "/chat" },
     { icon: "auto_stories", label: "时光故事", href: "/scene" },
 { icon: "person", label: "个人中心", href: "/profile" },
