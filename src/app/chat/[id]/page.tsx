@@ -233,7 +233,7 @@ export default function ChatPage() {
         <nav className="flex-1 space-y-1">
           {[
             { icon: "home", label: "首页", href: "/" },
-            { icon: "chat_bubble", label: "AI 助手", href: "/chat", active: true },
+            { icon: "chat_bubble", label: "文物对话", href: "/chat", active: true },
             { icon: "auto_stories", label: "时光故事", href: "/scene" },
             { icon: "person", label: "个人中心", href: "/profile" },
           ].map((item) => (

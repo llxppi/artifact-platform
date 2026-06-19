@@ -62,7 +62,7 @@ export default async function ArtifactDetailPage({ params }: Props) {
                 <h2 className="text-sm font-bold tracking-widest text-secondary uppercase">知识要点</h2>
               </div>
               <div className="space-y-3">
-                {artifact.knowledge.slice(0, 5).map((k, i) => (
+                {artifact.knowledge.map((k, i) => (
                   <div key={i} className="p-4 bg-surface-container-low rounded-xl">
                     <p className="text-sm text-on-surface">{k.content}</p>
                     <p className="text-xs text-secondary mt-2">来源：{k.source}</p>

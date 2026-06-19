@@ -1,6 +1,8 @@
 # 物语 ArtiFact
 
-> AI × 中华文化遗产互动平台，基于 Next.js 15 + Claude API (claude-sonnet-4-6)
+**物语 ArtiFact** 是一个 AI 驱动的中华文化遗产互动平台。平台收录 73+ 件跨越六千年的中华文物，借助 Claude AI，让每件文物"开口说话"——用户可以与文物第一人称对话、让专家深度讲解，或沉浸式穿越历史现场，还能生成专属的历史情景故事。
+
+> 技术栈：Next.js 15 · TypeScript · Tailwind CSS · Claude API (claude-sonnet-4-6) · Prisma · SQLite
 
 ## 功能开发情况
 
@@ -32,7 +34,7 @@
 | 朝代 | 代表文物 |
 |------|---------|
 | 新石器 | 仰韶彩陶、良渚玉琮 |
-| 商周 | 后母戊鼎、四羊方尊、越王勾践剑 |
+| 商周 | 司母戊鼎、四羊方尊、越王勾践剑 |
 | 秦汉 | 秦始皇兵马俑、马踏飞燕、素纱单衣 |
 | 隋唐 | 唐三彩、昭陵六骏 |
 | 宋元 | 清明上河图、汝窑天青釉碗 |
@@ -105,8 +107,11 @@ src/
 
 | 变量 | 说明 |
 |------|------|
-| `ANTHROPIC_API_KEY` | Anthropic API 密钥（必填） |
-| `DATABASE_URL` | SQLite 数据库路径（默认 `prisma/dev.db`）|
+| `OPENAI_API_KEY` | AI 服务 API 密钥（必填） |
+| `OPENAI_BASE_URL` | API 地址（默认 `https://api.openai.com/v1`）|
+| `MODEL` | 模型名称（默认 `gpt-4o-mini`）|
+
+> 数据库无需配置，SQLite 文件已内置（`prisma/dev.db`）。
 
 ---
 
