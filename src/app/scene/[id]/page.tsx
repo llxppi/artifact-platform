@@ -332,8 +332,10 @@ export default function ScenePage() {
           <section className="w-full max-w-4xl mb-12 flex flex-col gap-6">
             {/* Artifact info */}
             <div className="flex items-center gap-3 mb-2">
-              <div className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-2xl">
-                {artifact.emoji}
+              <div className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-2xl overflow-hidden">
+                {artifact.image
+                  ? <img src={artifact.image} alt={artifact.name} className="w-full h-full object-cover" />
+                  : artifact.emoji}
               </div>
               <div>
                 <div className="text-sm font-bold text-primary">{artifact.name}</div>
