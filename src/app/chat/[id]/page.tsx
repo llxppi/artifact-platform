@@ -414,13 +414,9 @@ export default function ChatPage() {
           <Link href={`/scene/${artifact.id}`} title="生成故事" className="hover:text-tertiary transition-colors">
             <span className="material-symbols-outlined text-xl">auto_stories</span>
           </Link>
-          <button title="文献数据库" className="hover:text-tertiary transition-colors">
+          <Link href={`/artifact/${artifact.id}`} title="文物档案" className="hover:text-tertiary transition-colors">
             <span className="material-symbols-outlined text-xl">history_edu</span>
-          </button>
-          <div className="w-4 h-px bg-outline-variant/20" />
-          <button title="分享" className="hover:text-tertiary transition-colors">
-            <span className="material-symbols-outlined text-xl">share</span>
-          </button>
+          </Link>
         </div>
       </aside>
     </div>
