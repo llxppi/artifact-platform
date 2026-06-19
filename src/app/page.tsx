@@ -39,6 +39,7 @@ export default function HomePage() {
         <div className="mb-8">
           <h2 className="text-2xl md:text-4xl font-extrabold text-primary tracking-tighter mb-1">文物馆</h2>
           <p className="text-sm text-secondary">完整馆藏 · 按历史时期浏览</p>
+          <p className="text-xs text-outline mt-1">点击查看文物档案，开始互动</p>
         </div>
         <ArtifactBrowser renderCard={MuseumCard} />
       </main>
