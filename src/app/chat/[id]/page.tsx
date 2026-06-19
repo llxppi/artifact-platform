@@ -234,6 +234,7 @@ export default function ChatPage() {
           {[
             { icon: "home", label: "首页", href: "/" },
             { icon: "chat_bubble", label: "文物对话", href: "/chat", active: true },
+            { icon: "history_edu", label: "文物档案", href: `/artifact/${artifact.id}` },
             { icon: "auto_stories", label: "时光故事", href: "/scene" },
             { icon: "person", label: "个人中心", href: "/profile" },
           ].map((item) => (
@@ -413,9 +414,6 @@ export default function ChatPage() {
         <div className="flex flex-col gap-8 text-secondary/60">
           <Link href={`/scene/${artifact.id}`} title="生成故事" className="hover:text-tertiary transition-colors">
             <span className="material-symbols-outlined text-xl">auto_stories</span>
-          </Link>
-          <Link href={`/artifact/${artifact.id}`} title="文物档案" className="hover:text-tertiary transition-colors">
-            <span className="material-symbols-outlined text-xl">history_edu</span>
           </Link>
         </div>
       </aside>
