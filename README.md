@@ -62,10 +62,9 @@
 ## 快速启动
 
 ```bash
-cd artifact-platform/prototype
 npm install
 cp .env.local.example .env.local
-# 填入 ANTHROPIC_API_KEY
+# 填入 OPENAI_API_KEY（支持 Kimi / OpenAI 等兼容接口）
 npm run dev
 # 访问 http://localhost:3000
 ```
@@ -108,8 +107,8 @@ src/
 | 变量 | 说明 |
 |------|------|
 | `OPENAI_API_KEY` | AI 服务 API 密钥（必填） |
-| `OPENAI_BASE_URL` | API 地址（默认 `https://api.openai.com/v1`）|
-| `MODEL` | 模型名称（默认 `gpt-4o-mini`）|
+| `OPENAI_BASE_URL` | API 地址（默认 Kimi：`https://api.moonshot.cn/v1`）|
+| `MODEL` | 模型名称（默认 `moonshotai/kimi-k2.5`）|
 
 > 数据库无需配置，SQLite 文件已内置（`prisma/dev.db`）。
 
