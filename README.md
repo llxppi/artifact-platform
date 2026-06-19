@@ -106,9 +106,11 @@ src/
 
 | 变量 | 说明 |
 |------|------|
-| `OPENAI_API_KEY` | AI 服务 API 密钥（必填） |
-| `OPENAI_BASE_URL` | API 地址（默认 Kimi：`https://api.moonshot.cn/v1`）|
-| `MODEL` | 模型名称（默认 `moonshotai/kimi-k2.5`）|
+| `OPENAI_API_KEY` | 主对话 API 密钥（必填） |
+| `OPENAI_BASE_URL` | 主对话 API 地址（`https://deeprouter.top/v1`）|
+| `MODEL` | 主对话模型（`gpt-4o-mini`）|
+| `BRANCH_BASE_URL` | 分支/故事 API 地址（`https://api.qnaigc.com/v1`）|
+| `BRANCH_MODEL` | 分支/故事模型（`moonshotai/kimi-k2.5`）|
 
 > 数据库无需配置，SQLite 文件已内置（`prisma/dev.db`）。
 
