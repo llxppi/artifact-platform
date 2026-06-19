@@ -298,7 +298,7 @@ export default function ChatPage() {
                 </div>
               )}
             </div>
-            <button className="p-2 text-secondary hover:text-primary transition-colors">
+            <button className="p-2 text-secondary hover:text-primary transition-colors" onClick={() => setToast({ message: "该功能还未实现", type: "info" })}>
               <span className="material-symbols-outlined">share</span>
             </button>
           </div>
