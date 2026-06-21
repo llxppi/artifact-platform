@@ -124,6 +124,7 @@ export async function POST(req: NextRequest) {
       body: JSON.stringify({
         model: process.env.SCENE_MODEL || process.env.MODEL || "deepseek-v4-flash",
         messages: [{ role: "user", content: prompt }],
+        thinking: { type: "disabled" },
         temperature: 0.7,
         max_tokens: maxTokens,
         stream: true,
