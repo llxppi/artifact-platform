@@ -12,14 +12,14 @@ export async function POST(req: NextRequest) {
       traveler: "以穿越旅行者视角",
     };
 
-    const response = await fetch(`${apiUrl}/chat/completions`, {
+    const response = await fetch(`https://api.deepseek.com/chat/completions`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`,
+        "Authorization": `Bearer ${process.env.DEEPSEEK_API_KEY}`,
       },
       body: JSON.stringify({
-        model: process.env.MODEL || "gpt-4o-mini",
+        model: "deepseek-v4-flash",
         messages: [
           {
             role: "user",
