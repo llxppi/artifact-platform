@@ -2,7 +2,7 @@
 
 **物语 ArtiFact** 是一个 AI 驱动的中华文化遗产互动平台。平台收录 73+ 件跨越六千年的中华文物，借助大语言模型，让每件文物"开口说话"——用户可以与文物第一人称对话、让专家深度讲解，或沉浸式穿越历史现场，还能生成专属的历史情景故事。
 
-> 技术栈：Next.js 15 · TypeScript · Tailwind CSS · OpenAI-compatible API (gpt-4o-mini + Kimi K2.5) · Prisma · SQLite
+> 技术栈：Next.js 15 · TypeScript · Tailwind CSS · OpenAI-compatible API (gpt-4o-mini + deepseek-v4-flash + Kimi K2.5) · Prisma · SQLite
 
 ## 功能开发情况
 
