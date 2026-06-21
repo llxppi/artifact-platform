@@ -326,7 +326,7 @@ export default function ScenePage() {
       <TopNav />
       <SideNavNew />
       <div className="flex min-h-screen pt-20">
-        <main className="flex-1 lg:ml-64 flex flex-col items-center px-4 py-8">
+        <main className="flex-1 md:ml-64 flex flex-col items-center px-4 py-8">
 
           {/* Controls */}
           <section className="w-full max-w-4xl mb-12 flex flex-col gap-6">
@@ -370,7 +370,7 @@ export default function ScenePage() {
             {/* Style selection */}
             <div className="flex flex-col gap-3">
               <span className="text-xs font-bold text-secondary tracking-widest uppercase px-1">艺术风格</span>
-              <div className="flex flex-wrap gap-2 p-1.5 bg-surface-container-low rounded-xl w-fit">
+              <div className="flex flex-wrap gap-2 p-1.5 bg-surface-container-low rounded-xl w-full max-w-full">
                 {STYLE_OPTIONS.map((s) => (
                   <button
                     key={s.id}

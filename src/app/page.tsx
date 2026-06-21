@@ -35,7 +35,7 @@ export default function HomePage() {
     <div className="min-h-screen">
       <TopNav />
       <SideNavNew />
-      <main className="ml-0 md:ml-64 pt-20 pb-20 max-w-[1200px] mx-auto px-6">
+      <main className="ml-0 md:ml-64 pt-20 pb-28 md:pb-20 max-w-[1200px] mx-auto px-6">
         <div className="mb-8">
           <h2 className="text-2xl md:text-4xl font-extrabold text-primary tracking-tighter mb-1">文物馆</h2>
           <p className="text-sm text-secondary">完整馆藏 · 按历史时期浏览 · 选取一件文物，查看文物档案，开始互动</p>
