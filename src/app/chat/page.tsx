@@ -37,7 +37,7 @@ export default function ChatPage() {
     <div className="min-h-screen">
       <TopNav />
       <SideNavNew />
-      <main className="ml-0 lg:ml-64 pt-20 pb-20 max-w-[1200px] mx-auto px-6">
+      <main className="ml-0 md:ml-64 pt-20 pb-20 max-w-[1200px] mx-auto px-6">
         <div className="mb-8">
           <h2 className="text-4xl font-extrabold text-primary tracking-tighter mb-2">文物对话</h2>
           <p className="text-secondary text-sm">选择一件文物，开始对话探索</p>
