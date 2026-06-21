@@ -155,7 +155,8 @@ export default function ChatPage() {
             body: JSON.stringify({ content: displayed, mode }),
           }).then(r => r.json()).then(({ suggestions: dynamic }) => {
             if (dynamic?.length) {
-              setMessages(prev => { const m = [...prev]; m[m.length - 1] = { ...m[m.length - 1], suggestions: dynamic }; return m; });
+              const merged = [...new Set([...aiQuestions.slice(0, 2), ...dynamic])].slice(0, 3);
+              setMessages(prev => { const m = [...prev]; m[m.length - 1] = { ...m[m.length - 1], suggestions: merged }; return m; });
             }
           }).catch(() => {});
         }
