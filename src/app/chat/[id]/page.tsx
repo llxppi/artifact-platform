@@ -142,12 +142,6 @@ export default function ChatPage() {
           requestAnimationFrame(tick);
         } else {
           extractTags(displayed);
-          // 优先从 AI 回答中提取问句作为追问
-          const aiQuestions = (displayed.match(/[^。！\n]{4,35}？/g) || [])
-            .map(q => q.trim().replace(/^[…·\s—-]+/, ''))
-            .filter(q => q.length >= 6 && q.length <= 35);
-          const initialSuggestions = aiQuestions.length >= 2 ? aiQuestions.slice(0, 2) : getSuggestions(mode);
-          setMessages(prev => { const m = [...prev]; m[m.length - 1] = { ...m[m.length - 1], suggestions: initialSuggestions }; return m; });
           setLoading(false);
           fetch("/api/chat/suggestions", {
             method: "POST",
@@ -155,8 +149,7 @@ export default function ChatPage() {
             body: JSON.stringify({ content: displayed, mode }),
           }).then(r => r.json()).then(({ suggestions: dynamic }) => {
             if (dynamic?.length) {
-              const merged = [...new Set([...aiQuestions.slice(0, 2), ...dynamic])].slice(0, 3);
-              setMessages(prev => { const m = [...prev]; m[m.length - 1] = { ...m[m.length - 1], suggestions: merged }; return m; });
+              setMessages(prev => { const m = [...prev]; m[m.length - 1] = { ...m[m.length - 1], suggestions: dynamic }; return m; });
             }
           }).catch(() => {});
         }
