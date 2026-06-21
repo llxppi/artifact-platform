@@ -114,6 +114,8 @@ src/
 | `OPENAI_API_KEY` | 主对话 API 密钥（必填） |
 | `OPENAI_BASE_URL` | 主对话 API 地址（`https://deeprouter.top/v1`）|
 | `MODEL` | 主对话模型（`gpt-4o-mini`）|
+|`DEEPSEEK_API_KEY| 智能追问API 密钥（必填）|
+|`BRANCH_API_KEY| 智能追问API 密钥（必填）
 | `BRANCH_BASE_URL` | 分支/故事 API 地址（`https://api.qnaigc.com/v1`）|
 | `BRANCH_MODEL` | 分支/故事模型（`moonshotai/kimi-k2.5`）|
 
