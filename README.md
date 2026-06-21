@@ -111,13 +111,16 @@ src/
 
 | 变量 | 说明 |
 |------|------|
-| `OPENAI_API_KEY` | 主对话 API 密钥（必填） |
-| `OPENAI_BASE_URL` | 主对话 API 地址（`https://deeprouter.top/v1`）|
-| `MODEL` | 主对话模型（`gpt-4o-mini`）|
-|`DEEPSEEK_API_KEY`| 智能追问API 密钥（必填）|
-|`BRANCH_API_KEY`| 分支/故事 API 密钥（必填）
-| `BRANCH_BASE_URL` | 分支/故事 API 地址（`https://api.qnaigc.com/v1`）|
-| `BRANCH_MODEL` | 分支/故事模型（`moonshotai/kimi-k2.5`）|
+| `CHAT_API_KEY` | 对话 API 密钥，推荐 DeepSeek（必填） |
+| `CHAT_BASE_URL` | 对话 API 地址（`https://api.deepseek.com`）|
+| `CHAT_MODEL` | 对话模型（`deepseek-v4-flash`）|
+| `OPENAI_API_KEY` | 故事生成 API 密钥（必填） |
+| `OPENAI_BASE_URL` | 故事生成 API 地址（`https://deeprouter.top/v1`）|
+| `MODEL` | 故事生成模型（`gpt-4o-mini`）|
+| `DEEPSEEK_API_KEY` | 智能追问 API 密钥，需 DeepSeek（必填）|
+| `BRANCH_API_KEY` | 故事分支 API 密钥（必填）|
+| `BRANCH_BASE_URL` | 故事分支 API 地址（`https://api.qnaigc.com/v1`）|
+| `BRANCH_MODEL` | 故事分支模型（`moonshotai/kimi-k2.5`）|
 
 > 数据库无需配置，SQLite 文件已内置（`prisma/dev.db`）。
 
