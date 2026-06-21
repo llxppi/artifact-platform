@@ -38,7 +38,7 @@ export const NEOLITHIC_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "人面鱼纹彩陶盆1955年出土于陕西西安半坡遗址，属仰韶文化，高16.5厘米、口径39.8厘米，距今约6000年，是新石器时代彩陶艺术的代表作。1995年定为国家一级文物，2013年列入第三批禁止出境展览文物目录。", type: "history" as const, credibility: 5 as const, source: "中国国家博物馆官方说明" },
+    { content: "人面鱼纹彩陶盆1955年出土于陕西西安半坡遗址，属仰韶文化，高16.5厘米、口径39.8厘米，距今约6000年，是新石器时代彩陶艺术的代表作。1995年定为国家一级文物，2013年列入第三批禁止出境展览文物目录。", type: "history" as const, credibility: 5 as const, source: "中国国家博物馆" },
     { content: "盆内壁绘有两组人面鱼纹，人面呈圆形，口衔两鱼，图案对称，其含义至今众说纷纭，或为图腾、或为巫术符号。", type: "mystery" as const, credibility: 4 as const, source: "考古学与艺术史研究" },
     { content: "半坡遗址是仰韶文化的典型遗址，先民以渔猎和农耕为生，彩陶是其最重要的文化遗存。", type: "history" as const, credibility: 5 as const, source: "半坡博物馆" }
   ],
@@ -79,7 +79,7 @@ export const NEOLITHIC_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "蛋壳黑陶高柄杯是龙山文化的代表器物，杯壁最薄处仅0.2-0.3毫米，高26.5厘米，是新石器时代制陶工艺的最高成就。", type: "craft" as const, credibility: 5 as const, source: "山东博物馆官方说明" },
+    { content: "蛋壳黑陶高柄杯是龙山文化的代表器物，杯壁最薄处仅0.2-0.3毫米，高26.5厘米，是新石器时代制陶工艺的最高成就。", type: "craft" as const, credibility: 5 as const, source: "山东博物馆" },
     { content: "此杯以快轮制陶技术制成，工艺之精湛至今难以复制，体现了四千年前工匠的极致技艺。", type: "craft" as const, credibility: 5 as const, source: "陶瓷工艺研究" }
   ],
   },
@@ -120,7 +120,7 @@ export const NEOLITHIC_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "鹰形陶鼎1957年由陕西华县太平庄农民殷思义犁地时发现，1958年北京大学考古队正式发掘，属仰韶文化，以鹰的双腿和尾羽为三足，造型生动。2002年列入首批禁止出境展览文物目录。", type: "history" as const, credibility: 5 as const, source: "中国国家博物馆官方说明" },
+    { content: "鹰形陶鼎1957年由陕西华县太平庄农民殷思义犁地时发现，1958年北京大学考古队正式发掘，属仰韶文化，以鹰的双腿和尾羽为三足，造型生动。2002年列入首批禁止出境展览文物目录。", type: "history" as const, credibility: 5 as const, source: "中国国家博物馆" },
     { content: "此鼎兼具实用功能与艺术价值，鹰在仰韶文化中可能具有图腾意义，体现了先民对猛禽的崇拜。", type: "history" as const, credibility: 4 as const, source: "史前艺术研究" }
   ],
   },
@@ -198,7 +198,7 @@ export const NEOLITHIC_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "小口尖底陶瓶是仰韶文化的汲水器，尖底设计使其入水后自动倾斜汲水，水满后因重心改变自动直立，体现了先民对浮力的朴素认识和巧思。", type: "craft" as const, credibility: 4 as const, source: "半坡博物馆官方说明" },
+    { content: "小口尖底陶瓶是仰韶文化的汲水器，尖底设计使其入水后自动倾斜汲水，水满后因重心改变自动直立，体现了先民对浮力的朴素认识和巧思。", type: "craft" as const, credibility: 4 as const, source: "半坡博物馆" },
     { content: "此类陶瓶在半坡遗址大量出土，是仰韶文化先民日常生活的重要器具，也是研究史前生活方式的重要资料。", type: "history" as const, credibility: 5 as const, source: "半坡博物馆" }
   ],
   },
