@@ -112,13 +112,14 @@ export async function POST(req: NextRequest) {
 
     const prompt = buildScenePrompt(artifactId, sceneTemplate, style, nickname, identity, relation, length as "短篇" | "中篇" | "长篇");
     const maxTokens = length === "长篇" ? 6000 : length === "短篇" ? 2000 : 4000;
-    const apiUrl = process.env.OPENAI_BASE_URL || "https://api.openai.com/v1";
+    const apiUrl = process.env.SCENE_BASE_URL || process.env.OPENAI_BASE_URL || "https://api.openai.com/v1";
+    const apiKey = process.env.SCENE_API_KEY || process.env.OPENAI_API_KEY;
 
     const response = await fetch(`${apiUrl}/chat/completions`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+        Authorization: `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
         model: process.env.SCENE_MODEL || process.env.MODEL || "deepseek-v4-flash",
