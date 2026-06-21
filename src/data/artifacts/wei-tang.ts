@@ -38,7 +38,7 @@ export const WEI_TANG_ARTIFACTS: Artifact[] = [
     },
     knowledge: [
     { content: "《兰亭序》由东晋书法家王羲之于公元353年在浙江绍兴兰亭雅集上创作，全文324字，被誉为'天下第一行书'。", type: "history" as const, credibility: 5 as const, source: "书法史研究" },
-    { content: "相传唐太宗李世民酷爱《兰亭序》，命人临摹多本，今存世版本均为唐代摹本，以冯承素摹本（神龙本）最为著名，现藏故宫博物院。", type: "legend" as const, credibility: 3 as const, source: "故宫博物院官方说明" },
+    { content: "相传唐太宗李世民酷爱《兰亭序》，命人临摹多本，今存世版本均为唐代摹本，以冯承素摹本（神龙本）最为著名，现藏故宫博物院。", type: "legend" as const, credibility: 3 as const, source: "故宫博物院" },
     { content: "王羲之曾多次重写《兰亭序》，但均不及原作，他自己也承认那次微醺状态下的创作是神来之笔。", type: "history" as const, credibility: 4 as const, source: "历代书法评论" }
   ],
   },
@@ -278,7 +278,7 @@ export const WEI_TANG_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "唐三彩骆驼载乐俑是唐代三彩陶器的代表作，高58厘米，骆驼背上载有7名乐师俑，再现了丝路乐舞场景。", type: "history" as const, credibility: 5 as const, source: "中国国家博物馆官方说明" },
+    { content: "唐三彩骆驼载乐俑是唐代三彩陶器的代表作，高58厘米，骆驼背上载有7名乐师俑，再现了丝路乐舞场景。", type: "history" as const, credibility: 5 as const, source: "中国国家博物馆" },
     { content: "唐三彩以铅釉为基础，用铜、铁、钴等金属氧化物着色，烧制出黄、绿、白三色为主的彩陶。", type: "craft" as const, credibility: 5 as const, source: "陶瓷工艺研究" },
     { content: "骆驼是丝绸之路的重要交通工具，此俑反映了唐代与中亚、西亚的频繁文化交流。", type: "history" as const, credibility: 5 as const, source: "丝路历史研究" }
   ],
@@ -436,7 +436,7 @@ export const WEI_TANG_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "镶金兽首玛瑙杯1970年出土于陕西西安何家村，高6.5厘米，长15.6厘米，是迄今发现的唐代最精美的玛瑙器，2002年列入首批禁止出境展览文物目录。", type: "history" as const, credibility: 5 as const, source: "陕西历史博物馆官方说明" },
+    { content: "镶金兽首玛瑙杯1970年出土于陕西西安何家村，高6.5厘米，长15.6厘米，是迄今发现的唐代最精美的玛瑙器，2002年列入首批禁止出境展览文物目录。", type: "history" as const, credibility: 5 as const, source: "陕西历史博物馆" },
     { content: "杯身利用天然玛瑙红白相间的色泽雕成兽首形，口部镶金，体现了唐代工匠高超的俏色雕刻技艺。", type: "craft" as const, credibility: 5 as const, source: "玉器工艺研究" }
   ],
   },
@@ -476,7 +476,7 @@ export const WEI_TANG_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "葡萄花鸟纹银香囊1970年出土于陕西西安何家村，直径4.6厘米，内置同心圆环结构，利用重力原理使香盂始终保持水平。", type: "craft" as const, credibility: 5 as const, source: "陕西历史博物馆官方说明" },
+    { content: "葡萄花鸟纹银香囊1970年出土于陕西西安何家村，直径4.6厘米，内置同心圆环结构，利用重力原理使香盂始终保持水平。", type: "craft" as const, credibility: 5 as const, source: "陕西历史博物馆" },
     { content: "此结构与现代陀螺仪原理相同，比西方同类发明早约千年，体现了唐代工匠对物理原理的朴素掌握。", type: "craft" as const, credibility: 4 as const, source: "科技史研究" }
   ],
   },
@@ -516,7 +516,7 @@ export const WEI_TANG_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "舞马衔杯纹银壶1970年出土于陕西西安何家村，高14.8厘米，壶身錾刻舞马衔杯图案，印证了史书中唐玄宗千秋节训练舞马表演的记载。", type: "history" as const, credibility: 5 as const, source: "陕西历史博物馆官方说明" },
+    { content: "舞马衔杯纹银壶1970年出土于陕西西安何家村，高14.8厘米，壶身錾刻舞马衔杯图案，印证了史书中唐玄宗千秋节训练舞马表演的记载。", type: "history" as const, credibility: 5 as const, source: "陕西历史博物馆" },
     { content: "据史书记载，唐玄宗每年千秋节（生日）都会举行舞马表演，马匹经过训练能随音乐起舞并口衔酒杯。", type: "history" as const, credibility: 4 as const, source: "唐代史料" }
   ],
   },
@@ -555,7 +555,7 @@ export const WEI_TANG_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "鹿王本生图位于敦煌莫高窟第257窟西壁中层，是北魏时期的壁画，描绘九色神鹿救人却遭背叛的佛教本生故事。", type: "history" as const, credibility: 5 as const, source: "敦煌研究院官方说明" },
+    { content: "鹿王本生图位于敦煌莫高窟第257窟西壁中层，是北魏时期的壁画，描绘九色神鹿救人却遭背叛的佛教本生故事。", type: "history" as const, credibility: 5 as const, source: "敦煌研究院" },
     { content: "此壁画采用连环叙事手法，将故事分段绘于同一画面，是中国早期连环叙事绘画的重要代表。", type: "craft" as const, credibility: 5 as const, source: "敦煌艺术研究" }
   ],
   },
@@ -595,7 +595,7 @@ export const WEI_TANG_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "北魏司马金龙墓漆屏风1965年出土于山西大同，每块高约80厘米、宽约20厘米，是北魏贵族司马金龙的随葬品，色彩鲜艳。", type: "history" as const, credibility: 5 as const, source: "大同市博物馆官方说明" },
+    { content: "北魏司马金龙墓漆屏风1965年出土于山西大同，每块高约80厘米、宽约20厘米，是北魏贵族司马金龙的随葬品，色彩鲜艳。", type: "history" as const, credibility: 5 as const, source: "大同市博物馆" },
     { content: "漆屏风采用木胎漆绘工艺，历经1500余年色彩依然鲜艳，是研究北魏绘画艺术的珍贵实物。", type: "craft" as const, credibility: 5 as const, source: "北魏艺术研究" }
   ],
   },
@@ -634,7 +634,7 @@ export const WEI_TANG_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "白瓷龙柄传瓶是隋代白瓷的代表作，高18.4厘米，瓶柄塑成龙形，胎质洁白细腻，标志着中国白瓷工艺的成熟。", type: "craft" as const, credibility: 5 as const, source: "中国国家博物馆官方说明" },
+    { content: "白瓷龙柄传瓶是隋代白瓷的代表作，高18.4厘米，瓶柄塑成龙形，胎质洁白细腻，标志着中国白瓷工艺的成熟。", type: "craft" as const, credibility: 5 as const, source: "中国国家博物馆" },
     { content: "隋代白瓷的出现是中国陶瓷史上的重大突破，为唐代邢窑白瓷的繁荣奠定了基础。", type: "history" as const, credibility: 5 as const, source: "陶瓷史研究" }
   ],
   },
@@ -674,7 +674,7 @@ export const WEI_TANG_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "阙楼仪仗图是唐代懿德太子墓的壁画，高280-290厘米，宽200-220厘米，1971年出土于陕西乾县乾陵，描绘宫廷仪仗队列。", type: "history" as const, credibility: 5 as const, source: "陕西历史博物馆官方说明" },
+    { content: "阙楼仪仗图是唐代懿德太子墓的壁画，高280-290厘米，宽200-220厘米，1971年出土于陕西乾县乾陵，描绘宫廷仪仗队列。", type: "history" as const, credibility: 5 as const, source: "陕西历史博物馆" },
     { content: "壁画人物众多，构图宏大，色彩鲜艳，展示了唐代宫廷礼仪文化和绘画艺术的高超水平。", type: "craft" as const, credibility: 5 as const, source: "唐代壁画研究" }
   ],
   },
@@ -713,7 +713,7 @@ export const WEI_TANG_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-      { content: "该五代鎏金铜观音造像高53厘米，头戴高冠，冠上饰化佛，身佩璎珞。造像左臂撑岩，右臂置膝；左腿下垂，右腿上曲足踏岩石；安坐于山岩之上。身旁石上置一净瓶，身后有一圆轮状大背光，浑圆精美，边缘装饰火焰纹。", type: "craft" as const, credibility: 5 as const, source: "故宫博物院官方说明" },
+      { content: "该五代鎏金铜观音造像高53厘米，头戴高冠，冠上饰化佛，身佩璎珞。造像左臂撑岩，右臂置膝；左腿下垂，右腿上曲足踏岩石；安坐于山岩之上。身旁石上置一净瓶，身后有一圆轮状大背光，浑圆精美，边缘装饰火焰纹。", type: "craft" as const, credibility: 5 as const, source: "故宫博物院" },
       { content: "该五代鎏金铜观音造像出土于浙江金华万佛塔地宫。地宫于1956年底被发现，1957年1月1日正式发掘。", type: "history" as const, credibility: 5 as const, source: "佛教艺术研究" },
     ],
   },
@@ -793,7 +793,7 @@ export const WEI_TANG_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "铜坐龙1965年出土于黑龙江阿城，高19.6厘米，是金代青铜器的代表作，龙坐姿威猛，是金朝皇权的象征。", type: "history" as const, credibility: 5 as const, source: "黑龙江省博物馆官方说明" },
+    { content: "铜坐龙1965年出土于黑龙江阿城，高19.6厘米，是金代青铜器的代表作，龙坐姿威猛，是金朝皇权的象征。", type: "history" as const, credibility: 5 as const, source: "黑龙江省博物馆" },
     { content: "铜坐龙造型融合了女真族与汉族的龙文化，体现了金代多元文化融合的特点。", type: "craft" as const, credibility: 4 as const, source: "金代艺术研究" }
   ],
   },

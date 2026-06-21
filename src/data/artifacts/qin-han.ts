@@ -43,12 +43,12 @@ export const QIN_HAN_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "秦始皇兵马俑于1974年3月由当地村民打井时偶然发现，是20世纪最重大的考古发现之一。", type: "history" as const, credibility: 5 as const, source: "秦始皇帝陵博物院官方资料" },
-    { content: "兵马俑坑现已发现四个，其中一号坑面积最大，约14260平方米，坑内估计有6000余件陶俑陶马。", type: "history" as const, credibility: 5 as const, source: "秦始皇帝陵博物院统计数据" },
+    { content: "秦始皇兵马俑于1974年3月由当地村民打井时偶然发现，是20世纪最重大的考古发现之一。", type: "history" as const, credibility: 5 as const, source: "秦始皇帝陵博物院" },
+    { content: "兵马俑坑现已发现四个，其中一号坑面积最大，约14260平方米，坑内估计有6000余件陶俑陶马。", type: "history" as const, credibility: 5 as const, source: "秦始皇帝陵博物院" },
     { content: "每件兵马俑面部特征各不相同，采用泥条盘筑法先塑型，模塑结合制作；头部和双手单独制作后插接入躯干，双臂单独制作后粘接。", type: "craft" as const, credibility: 4 as const, source: "秦始皇帝陵博物院" },
-    { content: "兵马俑出土时均有彩绘，颜色鲜艳，但接触空气后迅速氧化褪色，目前保护技术仍是世界难题。", type: "mystery" as const, credibility: 5 as const, source: "秦陵保护研究院发布的研究报告" },
+    { content: "兵马俑出土时均有彩绘，颜色鲜艳，但接触空气后迅速氧化褪色，目前保护技术仍是世界难题。", type: "mystery" as const, credibility: 5 as const, source: "秦陵保护研究院" },
     { content: "俑坑内发现陶文280余件，可辨识出87个陶工名（其中29人可与史书记载对应），说明当时实行了\"物勒工名\"的质量责任制。", type: "history" as const, credibility: 5 as const, source: "秦始皇帝陵博物院" },
-    { content: "兵马俑所持武器均为真实战争兵器，包括铜剑、矛、戈、弩等，部分青铜剑历经2200年仍锋利如初，含铬防锈技术领先西方约2000年。", type: "craft" as const, credibility: 4 as const, source: "德国科研机构对兵马俑武器的科学分析" }
+    { content: "兵马俑所持武器均为真实战争兵器，包括铜剑、矛、戈、弩等，部分青铜剑历经2200年仍锋利如初，含铬防锈技术领先西方约2000年。", type: "craft" as const, credibility: 4 as const, source: "科研机构对兵马俑武器的科学分析" }
   ],
   },
   {
@@ -169,10 +169,10 @@ export const QIN_HAN_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "铜奔马（又名马踏飞燕）1969年出土于甘肃武威雷台汉墓，同时出土铜车马仪仗队共99件，高34.5厘米，重7.15千克。", type: "history" as const, credibility: 5 as const, source: "甘肃省博物馆官方说明" },
+    { content: "铜奔马（又名马踏飞燕）1969年出土于甘肃武威雷台汉墓，同时出土铜车马仪仗队共99件，高34.5厘米，重7.15千克。", type: "history" as const, credibility: 5 as const, source: "甘肃省博物馆" },
     { content: "铜马三足腾空，一足踏在一只飞翔的燕背上，整体重心完美平衡在这一接触点上，展示了东汉工匠的杰出力学智慧。", type: "craft" as const, credibility: 5 as const, source: "物理学家和考古学家对作品的力学分析" },
     { content: "关于马足下踩踏的动物，学界有争议：郭沫若命名为'马踏飞燕'并沿用至今，但亦有学者认为那是传说中的神兽'龙雀'。", type: "mystery" as const, credibility: 4 as const, source: "各学者对命名的学术争论" },
-    { content: "1983年，铜奔马被国家旅游局确定为中国旅游标志，1986年被定为国宝级文物，2002年列入首批禁止出境展览文物目录。", type: "history" as const, credibility: 5 as const, source: "国家旅游局/甘肃省博物馆" },
+    { content: "1983年，铜奔马被国家旅游局确定为中国旅游标志，1986年被定为国宝级文物，2002年列入首批禁止出境展览文物目录。", type: "history" as const, credibility: 5 as const, source: "甘肃省博物馆" },
     { content: "汉代以西域汗血宝马为最珍贵的马种，马踏飞燕的造型与汗血宝马特征吻合，可能是以此为原型创作。", type: "history" as const, credibility: 3 as const, source: "汉代马政研究及史料推测" }
   ],
   },
@@ -212,7 +212,7 @@ export const QIN_HAN_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "长信宫灯高48厘米，造型为跪坐宫女，宫女右臂为灯管，烟尘可通过手臂导入灯体内的水中，起到净化空气的作用，通体鎏金。", type: "craft" as const, credibility: 5 as const, source: "河北博物院官方说明" },
+    { content: "长信宫灯高48厘米，造型为跪坐宫女，宫女右臂为灯管，烟尘可通过手臂导入灯体内的水中，起到净化空气的作用，通体鎏金。", type: "craft" as const, credibility: 5 as const, source: "河北博物院" },
     { content: "长信宫灯通体鎏金，灯盘可转动调节光照方向，灯罩可开合调节亮度，设计极为精巧实用。", type: "craft" as const, credibility: 5 as const, source: "考古发掘报告" }
   ],
   },
@@ -252,7 +252,7 @@ export const QIN_HAN_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "击鼓说唱俑1957年出土于四川成都天回山，高56厘米，表现一位说唱艺人左臂夹鼓、右手举槌、张口大笑的生动形象。", type: "history" as const, credibility: 5 as const, source: "中国国家博物馆官方说明" },
+    { content: "击鼓说唱俑1957年出土于四川成都天回山，高56厘米，表现一位说唱艺人左臂夹鼓、右手举槌、张口大笑的生动形象。", type: "history" as const, credibility: 5 as const, source: "中国国家博物馆" },
     { content: "此俑是研究汉代民间说唱艺术的重要实物资料，反映了东汉时期民间娱乐文化的繁荣。", type: "history" as const, credibility: 5 as const, source: "汉代艺术研究" }
   ],
   },
@@ -453,7 +453,7 @@ export const QIN_HAN_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "马王堆T型帛画出土于西汉长沙国丞相利苍之妻辛追夫人墓，长205厘米，上部宽92厘米，下部宽47.7厘米，T型构图分天上、人间、地下三部分。", type: "history" as const, credibility: 5 as const, source: "湖南博物院官方说明" },
+    { content: "马王堆T型帛画出土于西汉长沙国丞相利苍之妻辛追夫人墓，长205厘米，上部宽92厘米，下部宽47.7厘米，T型构图分天上、人间、地下三部分。", type: "history" as const, credibility: 5 as const, source: "湖南博物院" },
     { content: "帛画色彩鲜艳，人物生动，是中国早期绘画艺术的最高成就之一，对研究汉代艺术史具有重要价值。", type: "craft" as const, credibility: 5 as const, source: "汉代艺术研究" },
     { content: "帛画中辛追夫人形象端庄，身着华服，两侧有侍从，下方有冥界守护，体现了汉代贵族对死后世界的想象。", type: "history" as const, credibility: 5 as const, source: "马王堆考古报告" }
   ],
@@ -495,7 +495,7 @@ export const QIN_HAN_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "素纱襌衣出土于马王堆一号汉墓，长128厘米，通袖长195厘米，重仅49克，是迄今发现最轻的古代服装。", type: "craft" as const, credibility: 5 as const, source: "湖南博物院官方说明" },
+    { content: "素纱襌衣出土于马王堆一号汉墓，长128厘米，通袖长195厘米，重仅49克，是迄今发现最轻的古代服装。", type: "craft" as const, credibility: 5 as const, source: "湖南博物院" },
     { content: "现代纺织专家历时13年才复制出同等重量的素纱襌衣，足见汉代工匠技艺之高超。", type: "craft" as const, credibility: 5 as const, source: "纺织工艺研究" }
   ],
   },
@@ -534,7 +534,7 @@ export const QIN_HAN_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-      { content: "「见日之光」镜是西汉铜镜的代表器物，镜背铭文'见日之光，天下大明'，是汉代日光镜铭文中最具代表性的一类。", type: "history" as const, credibility: 5 as const, source: "中国国家博物馆/铜镜研究专著" },
+      { content: "「见日之光」镜是西汉铜镜的代表器物，镜背铭文'见日之光，天下大明'，是汉代日光镜铭文中最具代表性的一类。", type: "history" as const, credibility: 5 as const, source: "中国国家博物馆" },
       { content: "汉代铜镜工艺高度发达，镜背纹饰与铭文兼备，铭文多含祈福、祝寿之意，反映了汉代人对美好生活的向往。", type: "craft" as const, credibility: 5 as const, source: "汉代铜镜研究" },
     ],
   },
@@ -574,7 +574,7 @@ export const QIN_HAN_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "错金博山炉1968年出土于河北满城中山靖王刘胜墓，高26厘米，炉盖镂雕成仙山形状，通体错金，是汉代博山炉的代表作。", type: "history" as const, credibility: 5 as const, source: "河北博物院官方说明" },
+    { content: "错金博山炉1968年出土于河北满城中山靖王刘胜墓，高26厘米，炉盖镂雕成仙山形状，通体错金，是汉代博山炉的代表作。", type: "history" as const, credibility: 5 as const, source: "河北博物院" },
     { content: "博山炉因炉盖形似传说中的海上仙山'博山'而得名，焚香时烟雾从山间缭绕，营造出仙境氛围。", type: "history" as const, credibility: 5 as const, source: "汉代文化研究" },
     { content: "错金工艺将金丝嵌入青铜器表面，形成精美纹饰，是汉代金属工艺的最高成就之一。", type: "craft" as const, credibility: 5 as const, source: "青铜器工艺研究" }
   ],
@@ -654,7 +654,7 @@ export const QIN_HAN_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "地动仪由东汉科学家张衡于公元132年发明，是世界上最早的地震监测仪器之一。原件已失传，现存为后人根据文献记载复原的模型。", type: "history" as const, credibility: 5 as const, source: "《后汉书·张衡传》/中国科技馆" },
+    { content: "地动仪由东汉科学家张衡于公元132年发明，是世界上最早的地震监测仪器之一。原件已失传，现存为后人根据文献记载复原的模型。", type: "history" as const, credibility: 5 as const, source: "中国科技馆" },
     { content: "地动仪外形如酒樽，内有精巧机关，八个方向各有一龙，龙口含铜珠，地震时对应方向的龙口张开落珠。", type: "craft" as const, credibility: 4 as const, source: "历史文献记载与复原研究" },
     { content: "公元138年，地动仪成功记录了陇西地震，当时洛阳并无震感，数日后信使来报证实了仪器的准确性。", type: "history" as const, credibility: 4 as const, source: "《后汉书》记载" }
   ],

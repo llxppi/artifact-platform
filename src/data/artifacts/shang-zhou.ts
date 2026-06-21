@@ -381,7 +381,7 @@ export const SHANG_ZHOU_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "利簋1976年出土于陕西临潼零口，腹内铭文4行33字，记载武王伐纣后第七天在阑师铸造此器，是牧野之战的直接文字证据。", type: "history" as const, credibility: 5 as const, source: "中国国家博物馆官方说明" },
+    { content: "利簋1976年出土于陕西临潼零口，腹内铭文4行33字，记载武王伐纣后第七天在阑师铸造此器，是牧野之战的直接文字证据。", type: "history" as const, credibility: 5 as const, source: "中国国家博物馆" },
     { content: "铭文中'岁鼎克昏夙有商'记录了武王克商的时间，为夏商周断代工程提供了重要依据。", type: "history" as const, credibility: 5 as const, source: "夏商周断代工程研究报告" },
     { content: "利簋是目前所知最早的西周青铜器之一，其铭文是研究武王伐纣年代的核心史料。", type: "history" as const, credibility: 5 as const, source: "青铜器铭文研究" }
   ],
@@ -423,8 +423,8 @@ export const SHANG_ZHOU_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "何尊1963年由陕西宝鸡贾村镇村民陈堆发现，腹内铭文122字，其中\"宅兹中国\"是目前已知\"中国\"二字最早的文字记录。", type: "history" as const, credibility: 5 as const, source: "宝鸡青铜器博物院官方说明" },
-    { content: "'宅兹中国'意为'居住在天下中央'，指周王朝建都洛邑（今洛阳），是周成王对周公营建洛邑的记述。", type: "history" as const, credibility: 5 as const, source: "铭文考释研究" },
+    { content: "何尊1963年由陕西宝鸡贾村镇村民陈堆发现，腹内铭文122字，其中\"宅兹中国\"是目前已知\"中国\"二字最早的文字记录。", type: "history" as const, credibility: 5 as const, source: "宝鸡青铜器博物院" },
+    { content: "'宅兹中国'意为'居住在天下中央'，指周王朝建都洛邑（今洛阳），是周成王对周公营建洛邑的记述。", type: "history" as const, credibility: 5 as const, source: "铭文相关研究" },
     { content: "何尊是西周早期青铜器的代表作，造型庄重，纹饰精美，是宝鸡青铜器博物院的镇馆之宝。", type: "history" as const, credibility: 5 as const, source: "宝鸡青铜器博物院" }
   ],
   },
@@ -464,9 +464,9 @@ export const SHANG_ZHOU_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "毛公鼎腹内铭文共32行约499字（一说497字），是现存青铜器中铭文最长者，记载了周宣王对毛公厝的册命内容。", type: "history" as const, credibility: 5 as const, source: "台北故宫博物院官方说明" },
-    { content: "毛公鼎1843年出土于陕西岐山，辗转流传，1949年运至台湾，现为台北故宫博物院镇馆之宝。", type: "history" as const, credibility: 5 as const, source: "台北故宫博物院馆藏档案" },
-    { content: "铭文内容涉及西周政治、军事、礼制等多方面，是研究西周历史的第一手资料。", type: "history" as const, credibility: 5 as const, source: "金文研究专著" }
+    { content: "毛公鼎腹内铭文共32行约499字（一说497字），是现存青铜器中铭文最长者，记载了周宣王对毛公厝的册命内容。", type: "history" as const, credibility: 5 as const, source: "台北故宫博物院" },
+    { content: "毛公鼎1843年出土于陕西岐山，辗转流传，1949年运至台湾，现为台北故宫博物院镇馆之宝。", type: "history" as const, credibility: 5 as const, source: "台北故宫博物院" },
+    { content: "铭文内容涉及西周政治、军事、礼制等多方面，是研究西周历史的第一手资料。", type: "history" as const, credibility: 5 as const, source: "金文相关研究" }
   ],
   },
   {
@@ -507,7 +507,7 @@ export const SHANG_ZHOU_ARTIFACTS: Artifact[] = [
     },
     knowledge: [
     { content: "虢季子白盘是西周晚期大型青铜盥洗器，铭文111字记载虢国将领子白征伐猃狁（北方游牧民族）的战功。", type: "history" as const, credibility: 5 as const, source: "中国国家博物馆" },
-    { content: "铭文记载子白斩首500人、俘虏50人，周王赐予弓矢、斧钺等，是研究西周军事制度的重要资料。", type: "history" as const, credibility: 5 as const, source: "金文研究" }
+    { content: "铭文记载子白斩首500人、俘虏50人，周王赐予弓矢、斧钺等，是研究西周军事制度的重要资料。", type: "history" as const, credibility: 5 as const, source: "金文相关研究" }
   ],
   },
   {
@@ -547,7 +547,7 @@ export const SHANG_ZHOU_ARTIFACTS: Artifact[] = [
     },
     knowledge: [
     { content: "宜侯夨簋1954年出土于江苏丹徒，铭文记载周康王将虞侯改封为宜侯，赐予土地、人民和器物，是西周分封制的直接文字证据。", type: "history" as const, credibility: 5 as const, source: "中国国家博物馆" },
-    { content: "此簋是研究西周分封制度、诸侯国建立过程的重要实物，对了解西周政治体制具有重要价值。", type: "history" as const, credibility: 5 as const, source: "西周史研究" }
+    { content: "此簋是研究西周分封制度、诸侯国建立过程的重要实物，对了解西周政治体制具有重要价值。", type: "history" as const, credibility: 5 as const, source: "西周史相关研究" }
   ],
   },
   {
@@ -587,8 +587,8 @@ export const SHANG_ZHOU_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "大克鼎1890年出土于陕西扶风，重201.5千克，铭文290字，记载贵族克颂扬祖父师华父辅佐周王的功绩。2002年列入首批禁止出境展览文物目录。", type: "history" as const, credibility: 5 as const, source: "上海博物馆官方说明" },
-    { content: "大克鼎是上海博物馆的镇馆之宝，与毛公鼎、散氏盘、虢季子白盘并称西周四大青铜器。", type: "history" as const, credibility: 5 as const, source: "青铜器研究" }
+    { content: "大克鼎1890年出土于陕西扶风，重201.5千克，铭文290字，记载贵族克颂扬祖父师华父辅佐周王的功绩。2002年列入首批禁止出境展览文物目录。", type: "history" as const, credibility: 5 as const, source: "上海博物馆" },
+    { content: "大克鼎是上海博物馆的镇馆之宝，与毛公鼎、散氏盘、虢季子白盘并称西周四大青铜器。", type: "history" as const, credibility: 5 as const, source: "青铜器相关研究" }
   ],
   },
   {
@@ -627,7 +627,7 @@ export const SHANG_ZHOU_ARTIFACTS: Artifact[] = [
     },
     knowledge: [
     { content: "石鼓文是中国现存最早的石刻文字，刻于十块鼓形花岗岩上，内容为先秦游猎诗歌，现藏故宫博物院。", type: "history" as const, credibility: 5 as const, source: "故宫博物院" },
-    { content: "石鼓文字体介于金文与小篆之间，是研究汉字演变的重要资料，历代书法家视其为习篆重要范本。", type: "craft" as const, credibility: 5 as const, source: "书法史研究" }
+    { content: "石鼓文字体介于金文与小篆之间，是研究汉字演变的重要资料，历代书法家视其为习篆重要范本。", type: "craft" as const, credibility: 5 as const, source: "书法史相关研究" }
   ],
   },
 ];

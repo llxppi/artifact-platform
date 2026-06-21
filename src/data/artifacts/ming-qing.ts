@@ -37,8 +37,8 @@ export const MING_QING_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "翠玉白菜由一块天然翡翠巧妙利用白绿两色雕刻而成，白色部分为菜身，绿色部分为菜叶，长18.7厘米，宽9.1厘米，厚5.07厘米。", type: "craft" as const, credibility: 5 as const, source: "台北故宫博物院官方说明" },
-    { content: "白菜叶上雕有螽斯和蝗虫各一只，螽斯在中国文化中象征多子多孙，蝗虫则寓意丰收富裕，整体寓意子嗣繁盛。", type: "history" as const, credibility: 5 as const, source: "国立故宫博物院研究资料" },
+    { content: "翠玉白菜由一块天然翡翠巧妙利用白绿两色雕刻而成，白色部分为菜身，绿色部分为菜叶，长18.7厘米，宽9.1厘米，厚5.07厘米。", type: "craft" as const, credibility: 5 as const, source: "台北故宫博物院" },
+    { content: "白菜叶上雕有螽斯和蝗虫各一只，螽斯在中国文化中象征多子多孙，蝗虫则寓意丰收富裕，整体寓意子嗣繁盛。", type: "history" as const, credibility: 5 as const, source: "台北故宫博物院" },
     { content: "翠玉白菜原藏于北京故宫永和宫，据研究可能是光绪帝妃嫔瑾妃的陪嫁品，但确切来历仍有争议。", type: "mystery" as const, credibility: 3 as const, source: "故宫相关历史档案（记录不完整）" },
     { content: "1933年，翠玉白菜随国宝文物南迁，1949年辗转运至台湾，现为国立故宫博物院最具代表性的镇馆之宝之一。", type: "history" as const, credibility: 5 as const, source: "国立故宫博物院迁台历史记录" },
     { content: "翡翠是硬玉矿物，清代通过缅甸进入中国，迅速成为最受皇室贵族追捧的宝石，明代以前中国人更偏爱和田玉。", type: "history" as const, credibility: 5 as const, source: "中国玉器史研究著作" }
@@ -80,7 +80,7 @@ export const MING_QING_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "肉形石由天然玛瑙制成，长5.73厘米，宽6.6厘米，厚5.3厘米，工匠利用石材天然色泽层次雕琢成红烧肉形状，与翠玉白菜并称台北故宫博物院双绝。", type: "craft" as const, credibility: 5 as const, source: "台北故宫博物院官方说明" },
+    { content: "肉形石由天然玛瑙制成，长5.73厘米，宽6.6厘米，厚5.3厘米，工匠利用石材天然色泽层次雕琢成红烧肉形状，与翠玉白菜并称台北故宫博物院双绝。", type: "craft" as const, credibility: 5 as const, source: "台北故宫博物院" },
     { content: "肉形石与翠玉白菜并称台北故宫博物院双绝，是清代工艺美术中巧色技法的代表作。", type: "history" as const, credibility: 5 as const, source: "台北故宫博物院" }
   ],
   },
@@ -120,7 +120,7 @@ export const MING_QING_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "永乐大钟铸于明代永乐年间，重46.5吨，高6.75米，口径3.3米，钟体内外铸有佛经23万余字，是世界上铭文最多的铜钟。", type: "history" as const, credibility: 5 as const, source: "大钟寺古钟博物馆官方说明" },
+    { content: "永乐大钟铸于明代永乐年间，重46.5吨，高6.75米，口径3.3米，钟体内外铸有佛经23万余字，是世界上铭文最多的铜钟。", type: "history" as const, credibility: 5 as const, source: "大钟寺古钟博物馆" },
     { content: "大钟以独特的声学设计著称，钟声低沉悠远，可传数十里，体现了明代工匠高超的声学知识。", type: "craft" as const, credibility: 5 as const, source: "声学研究" }
   ],
   },
@@ -159,7 +159,7 @@ export const MING_QING_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "各种釉彩大瓶烧制于清乾隆年间，高86.4厘米，瓶身从上至下施以17种釉彩，集历代名釉于一身，被称为\"瓷母\"。", type: "craft" as const, credibility: 5 as const, source: "故宫博物院官方说明" },
+    { content: "各种釉彩大瓶烧制于清乾隆年间，高86.4厘米，瓶身从上至下施以17种釉彩，集历代名釉于一身，被称为\"瓷母\"。", type: "craft" as const, credibility: 5 as const, source: "故宫博物院" },
     { content: "此瓶代表了清代景德镇制瓷工艺的最高水平，是乾隆皇帝对陶瓷工艺极致追求的体现。", type: "history" as const, credibility: 5 as const, source: "陶瓷史研究" }
   ],
   },
@@ -198,7 +198,7 @@ export const MING_QING_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "《坤舆万国全图》由意大利传教士利玛窦与明朝官员李之藻合作，于1602年在北京刻印，长380.2厘米，宽168.7厘米，是中国现存最早的彩色世界地图之一。", type: "history" as const, credibility: 5 as const, source: "南京博物院官方说明" },
+    { content: "《坤舆万国全图》由意大利传教士利玛窦与明朝官员李之藻合作，于1602年在北京刻印，长380.2厘米，宽168.7厘米，是中国现存最早的彩色世界地图之一。", type: "history" as const, credibility: 5 as const, source: "南京博物院" },
     { content: "地图将中国置于中央位置，首次向中国人展示了完整的世界地理面貌，对明代地理学和世界观产生深远影响。", type: "history" as const, credibility: 5 as const, source: "地图学史研究" }
   ],
   },
@@ -237,7 +237,7 @@ export const MING_QING_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "金奔巴瓶高34厘米，是清乾隆皇帝于1793年颁布《钦定藏内善后章程二十九条》时制定的金瓶掣签制度的实物，用于认定藏传佛教活佛转世。", type: "history" as const, credibility: 5 as const, source: "故宫博物院官方说明" },
+    { content: "金奔巴瓶高34厘米，是清乾隆皇帝于1793年颁布《钦定藏内善后章程二十九条》时制定的金瓶掣签制度的实物，用于认定藏传佛教活佛转世。", type: "history" as const, credibility: 5 as const, source: "故宫博物院" },
     { content: "金瓶掣签制度规定，达赖、班禅等大活佛的转世灵童须经金瓶掣签认定，体现了清朝对西藏宗教事务的管理权。", type: "history" as const, credibility: 5 as const, source: "清代史料" }
   ],
   },
@@ -277,7 +277,7 @@ export const MING_QING_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "孝端皇后凤冠1957年出土于北京定陵，高27厘米，口径23.7厘米，重2320克，饰有翠凤、珍珠5000余颗、宝石100余块。", type: "history" as const, credibility: 5 as const, source: "中国国家博物馆官方说明" },
+    { content: "孝端皇后凤冠1957年出土于北京定陵，高27厘米，口径23.7厘米，重2320克，饰有翠凤、珍珠5000余颗、宝石100余块。", type: "history" as const, credibility: 5 as const, source: "中国国家博物馆" },
     { content: "凤冠以金丝为骨架，饰以翠鸟羽毛制成的翠凤，工艺极为精湛，是明代金工艺术的最高成就之一。", type: "craft" as const, credibility: 5 as const, source: "明代工艺研究" }
   ],
   },
@@ -316,7 +316,7 @@ export const MING_QING_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "金蝉玉叶是明代苏州金玉工艺的代表作，长5.3厘米，以黄金制成蝉形，栖于白玉叶片之上，现藏苏州博物馆。", type: "craft" as const, credibility: 5 as const, source: "苏州博物馆官方说明" },
+    { content: "金蝉玉叶是明代苏州金玉工艺的代表作，长5.3厘米，以黄金制成蝉形，栖于白玉叶片之上，现藏苏州博物馆。", type: "craft" as const, credibility: 5 as const, source: "苏州博物馆" },
     { content: "金蝉玉叶寓意'金枝玉叶'，是明代贵族女性的头饰，体现了明代对自然意象的审美追求。", type: "history" as const, credibility: 4 as const, source: "明代工艺研究" }
   ],
   },
@@ -355,7 +355,7 @@ export const MING_QING_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "抗倭图卷描绘明代戚继光率戚家军抗击倭寇的战争场景，长98.3厘米，宽36.5厘米，是研究明代海防与抗倭战争的重要图像史料。", type: "history" as const, credibility: 4 as const, source: "中国国家博物馆官方说明" },
+    { content: "抗倭图卷描绘明代戚继光率戚家军抗击倭寇的战争场景，长98.3厘米，宽36.5厘米，是研究明代海防与抗倭战争的重要图像史料。", type: "history" as const, credibility: 4 as const, source: "中国国家博物馆" },
     { content: "戚继光（1528—1588）是明代著名军事家，创立戚家军，多次击败倭寇，保卫东南沿海安全。", type: "history" as const, credibility: 5 as const, source: "明史研究" }
   ],
   },
@@ -395,7 +395,7 @@ export const MING_QING_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "大禹治水图玉山是清乾隆年间制作的巨型玉雕，重约5000千克，高224厘米，宽96厘米，历时约10年完成，是中国玉雕史上最大的作品。", type: "history" as const, credibility: 5 as const, source: "故宫博物院官方说明" },
+    { content: "大禹治水图玉山是清乾隆年间制作的巨型玉雕，重约5000千克，高224厘米，宽96厘米，历时约10年完成，是中国玉雕史上最大的作品。", type: "history" as const, credibility: 5 as const, source: "故宫博物院" },
     { content: "玉料来自新疆密勒塔山，经水路运至扬州雕刻，再运至北京，整个制作过程耗费了大量人力物力。", type: "craft" as const, credibility: 5 as const, source: "清代档案" }
   ],
   },

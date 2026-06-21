@@ -80,7 +80,7 @@ export const SONG_YUAN_ARTIFACTS: Artifact[] = [
     },
     knowledge: [
     { content: "《千里江山图》由北宋画家王希孟创作，据记载他18岁时在宋徽宗指导下完成此画，是其唯一传世作品。", type: "history" as const, credibility: 4 as const, source: "宋代画史记载" },
-    { content: "画卷纵51.5厘米、横1191.5厘米，以石青、石绿为主色，描绘连绵山川，是中国青绿山水画的最高成就。", type: "craft" as const, credibility: 5 as const, source: "故宫博物院官方说明" }
+    { content: "画卷纵51.5厘米、横1191.5厘米，以石青、石绿为主色，描绘连绵山川，是中国青绿山水画的最高成就。", type: "craft" as const, credibility: 5 as const, source: "故宫博物院" }
   ],
   },
   {
@@ -158,7 +158,7 @@ export const SONG_YUAN_ARTIFACTS: Artifact[] = [
       },
     },
     knowledge: [
-    { content: "青花萧何月下追韩信梅瓶是元末明初青花瓷的代表作，高44.1厘米，绘萧何月下追韩信故事，现藏南京市博物馆。", type: "history" as const, credibility: 5 as const, source: "南京市博物馆官方说明" },
+    { content: "青花萧何月下追韩信梅瓶是元末明初青花瓷的代表作，高44.1厘米，绘萧何月下追韩信故事，现藏南京市博物馆。", type: "history" as const, credibility: 5 as const, source: "南京市博物馆" },
     { content: "梅瓶造型挺拔，青花发色浓艳，人物刻画生动，是青花瓷人物故事题材的最高成就之一。", type: "craft" as const, credibility: 5 as const, source: "陶瓷艺术研究" }
   ],
   },
