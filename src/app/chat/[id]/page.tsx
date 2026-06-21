@@ -142,8 +142,12 @@ export default function ChatPage() {
           requestAnimationFrame(tick);
         } else {
           extractTags(displayed);
-          const staticSuggestions = getSuggestions(mode);
-          setMessages(prev => { const m = [...prev]; m[m.length - 1] = { ...m[m.length - 1], suggestions: staticSuggestions }; return m; });
+          // 优先从 AI 回答中提取问句作为追问
+          const aiQuestions = (displayed.match(/[^。！\n]{4,35}？/g) || [])
+            .map(q => q.trim().replace(/^[…·\s—-]+/, ''))
+            .filter(q => q.length >= 6 && q.length <= 35);
+          const initialSuggestions = aiQuestions.length >= 2 ? aiQuestions.slice(0, 2) : getSuggestions(mode);
+          setMessages(prev => { const m = [...prev]; m[m.length - 1] = { ...m[m.length - 1], suggestions: initialSuggestions }; return m; });
           setLoading(false);
           fetch("/api/chat/suggestions", {
             method: "POST",
