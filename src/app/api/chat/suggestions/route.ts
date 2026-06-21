@@ -26,8 +26,9 @@ export async function POST(req: NextRequest) {
             content: `根据以下回答内容，${modeHint[mode] || ""}生成2个用户可能感兴趣的追问问题。只返回JSON数组，例如：["问题1","问题2"]\n\n回答内容：${content.slice(0, 500)}`,
           },
         ],
+        thinking: { type: "disabled" },
         temperature: 0.8,
-        max_tokens: 100,
+        max_tokens: 200,
       }),
     });
 
