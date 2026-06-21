@@ -35,7 +35,7 @@ ${currentAct.content.slice(-300)}
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${apiKey}` },
       body: JSON.stringify({
-        model: process.env.BRANCH_MODEL || process.env.MODEL || "gpt-oss-20b",
+        model: process.env.BRANCH_MODEL || process.env.MODEL || "deepseek-v4-flash",
         messages: [{ role: "user", content: prompt }],
         temperature: 0.8,
         max_tokens: 300,

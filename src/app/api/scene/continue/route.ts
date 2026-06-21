@@ -68,7 +68,7 @@ ${outputSchema}`;
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${process.env.OPENAI_API_KEY}` },
       body: JSON.stringify({
-        model: process.env.MODEL || "gpt-oss-20b",
+        model: process.env.SCENE_MODEL || process.env.MODEL || "deepseek-v4-flash",
         messages: [{ role: "user", content: prompt }],
         temperature: 0.7,
         max_tokens: 3000,
