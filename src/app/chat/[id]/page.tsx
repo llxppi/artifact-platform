@@ -375,7 +375,7 @@ export default function ChatPage() {
         </section>
 
         {/* Input area */}
-        <footer className="absolute bottom-0 left-0 w-full p-6 lg:p-8 bg-gradient-to-t from-surface via-surface/95 to-transparent pointer-events-none">
+        <footer className="absolute bottom-0 left-0 w-full px-6 pt-6 pb-24 md:pb-6 lg:px-8 lg:pt-8 bg-gradient-to-t from-surface via-surface/95 to-transparent pointer-events-none">
           <div className="max-w-4xl mx-auto pointer-events-auto space-y-3">
             <QuotaWarning type="chat" remaining={quotaInfo.remaining} limit={quotaInfo.limit} />
             {messages.length <= 1 && (

@@ -322,11 +322,11 @@ export default function ScenePage() {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <TopNav />
       <SideNavNew />
       <div className="flex min-h-screen pt-20">
-        <main className="flex-1 md:ml-64 flex flex-col items-center px-4 py-8">
+        <main className="flex-1 md:ml-64 flex flex-col items-center px-4 pt-8 pb-28 md:py-8">
 
           {/* Controls */}
           <section className="w-full max-w-4xl mb-12 flex flex-col gap-6">
