@@ -309,7 +309,7 @@ export default function ChatPage() {
         </header>
 
         {/* Messages */}
-        <section className="flex-1 overflow-y-auto px-6 lg:px-10 pt-10 pb-36 scroll-hidden">
+        <section className="flex-1 overflow-y-auto px-6 lg:px-10 pt-10 pb-52 md:pb-36 scroll-hidden">
           <div className="max-w-4xl mx-auto space-y-8">
             {messages.map((msg, i) => (
               <div key={i} className={`flex items-start gap-4 ${msg.role === "user" ? "flex-row-reverse max-w-[85%] ml-auto" : "max-w-[85%]"}`}>
