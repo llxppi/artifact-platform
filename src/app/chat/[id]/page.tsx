@@ -272,6 +272,10 @@ export default function ChatPage() {
           <div className="flex items-center gap-3">
             <span className="w-2 h-2 rounded-full bg-green-500/60" />
             <span className="text-sm font-medium text-secondary">正在与「{artifact.nickname}」对话中</span>
+            <Link href={`/artifact/${artifact.id}`} className="lg:hidden flex items-center gap-1 text-xs text-outline hover:text-primary transition-colors">
+              <span className="material-symbols-outlined text-[14px]">history_edu</span>
+              文物档案
+            </Link>
           </div>
           <div className="flex items-center gap-3">
             <div className="relative">

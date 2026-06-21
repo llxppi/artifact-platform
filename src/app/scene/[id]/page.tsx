@@ -331,7 +331,7 @@ export default function ScenePage() {
           {/* Controls */}
           <section className="w-full max-w-4xl mb-12 flex flex-col gap-6">
             {/* Artifact info */}
-            <div className="flex items-center gap-3 mb-2">
+            <Link href={`/artifact/${artifactId}`} className="flex items-center gap-3 mb-2 hover:opacity-80 transition-opacity">
               <div className="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-2xl overflow-hidden">
                 {artifact.image
                   ? <img src={artifact.image} alt={artifact.name} className="w-full h-full object-cover" />
@@ -341,9 +341,7 @@ export default function ScenePage() {
                 <div className="text-sm font-bold text-primary">{artifact.name}</div>
                 <div className="text-xs text-secondary">{artifact.dynasty}</div>
               </div>
-            </div>
-
-            {/* Length selection */}
+            </Link>
             <div className="flex flex-col gap-3">
               <span className="text-xs font-bold text-secondary tracking-widest uppercase px-1">故事长度</span>
               <div className="flex gap-2">
