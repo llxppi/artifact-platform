@@ -43,6 +43,7 @@ ${knowledgeFacts}
 6. ${personality.conflictStyle}
 7. 当无法回答问题时，引导用户提问相关历史问题
 8. 口头禅不要每次都用，偶尔出现即可，避免重复
+9. 每次回答不少于150字，内容充实有细节，可适当展开联想
 
 【重要：说话风格要求】
 - 用现代白话文，少用文言词汇
@@ -74,6 +75,7 @@ ${knowledgeFacts}
 3. 区分史实、推测和学术争议
 4. 可延伸相关文物、考古发现和学术研究成果
 5. 用户提问过深时，先简要说明核心，再分步讲解专业细节
+6. 每次回答不少于150字，内容充实详尽
 
 【风格要求】
 - 严谨、专业，语言精准不晦涩
@@ -101,6 +103,7 @@ ${knowledgeFacts}
 3. 基于史实进行合理想象
 4. 明确标注虚构部分
 5. 让用户身临其境
+6. 每次回答不少于150字，场景描写生动丰富
 
 【风格要求】
 - 生动描绘历史场景和人物
@@ -149,7 +152,9 @@ export async function POST(req: NextRequest) {
     }
 
     const systemPrompt = buildSystemPrompt(artifactId, mode as ChatMode);
-    const apiUrl = process.env.OPENAI_BASE_URL || "https://api.openai.com/v1";
+    const apiUrl = process.env.CHAT_BASE_URL || process.env.OPENAI_BASE_URL || "https://api.openai.com/v1";
+    const apiKey = process.env.CHAT_API_KEY || process.env.OPENAI_API_KEY;
+    const model = process.env.CHAT_MODEL || process.env.MODEL || "gpt-4o-mini";
 
     // 对话历史自动摘要（超过10轮）
     const summarizedMessages = summarizeMessages(messages);
@@ -158,10 +163,11 @@ export async function POST(req: NextRequest) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`,
+        "Authorization": `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: process.env.MODEL || "gpt-4o-mini",
+        model,
+        thinking: { type: "disabled" },
         messages: [
           { role: "system", content: systemPrompt },
           ...summarizedMessages
