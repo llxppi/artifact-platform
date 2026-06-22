@@ -72,6 +72,7 @@ ${outputSchema}`;
         model: process.env.SCENE_MODEL || process.env.MODEL || "deepseek-v4-flash",
         messages: [{ role: "user", content: prompt }],
         thinking: { type: "disabled" },
+        response_format: { type: "json_object" },
         temperature: 0.7,
         max_tokens: 3000,
         stream: true,

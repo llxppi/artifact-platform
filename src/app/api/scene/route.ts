@@ -5,20 +5,43 @@ import { getArtifactById } from "@/data/artifacts";
 
 function safeParseJSON(text: string): unknown {
   try { return JSON.parse(text); } catch {}
-  // Fix unescaped double quotes inside string values
-  try {
-    const fixed = text.replace(/"([^"]*)"(\s*:\s*)"([^"]*)"/g, (m, k, sep, v) =>
-      `"${k}"${sep}"${v.replace(/"/g, '\\"')}"`
-    );
-    return JSON.parse(fixed);
-  } catch {}
-  // Aggressive: replace all " inside values with 「」
-  try {
-    const fixed = text.replace(/:\s*"([\s\S]*?)(?<!\\)"(?=\s*[,}\]])/g, (m, v) =>
-      `: "${v.replace(/(?<!\\)"/g, '\\"')}"`
-    );
-    return JSON.parse(fixed);
-  } catch {}
+
+  // Fix 1: array items missing opening quote  e.g.  采用快轮制陶技术制成",
+  const fix1 = (t: string) =>
+    t.replace(/^(\s*)([^\s"{\[\]\d\-tnf][^\n]*?)"(,?)$/gm, '$1"$2"$3');
+
+  // Fix 3: missing colon between key and object/array  e.g. "branch {  →  "branch": {
+  const fix3 = (t: string) =>
+    t.replace(/"([^"{}:\[\]\n]+)\s+(\{|\[)/g, '"$1": $2');
+
+  // Fix 2: character scanner — unescaped inner quotes + bare newlines inside strings
+  const fix2 = (t: string) => {
+    let result = "";
+    let inString = false;
+    for (let i = 0; i < t.length; i++) {
+      const c = t[i];
+      if (c === "\\" && inString) { result += c + (t[++i] ?? ""); continue; }
+      if (inString && (c === "\n" || c === "\r" || c === "\t")) {
+        result += c === "\n" ? "\\n" : c === "\r" ? "\\r" : "\\t"; continue;
+      }
+      if (c === '"') {
+        if (!inString) { inString = true; result += c; continue; }
+        let j = i + 1;
+        while (j < t.length && " \t\r\n".includes(t[j])) j++;
+        const next = t[j];
+        if (!next || ",}]:\"".includes(next)) { inString = false; result += c; }
+        else { result += '\\"'; }
+        continue;
+      }
+      result += c;
+    }
+    return result;
+  };
+
+  try { return JSON.parse(fix1(text)); } catch {}
+  try { return JSON.parse(fix3(text)); } catch {}
+  try { return JSON.parse(fix2(text)); } catch {}
+  try { return JSON.parse(fix2(fix1(fix3(text)))); } catch {}
   return null;
 }
 
@@ -127,6 +150,7 @@ export async function POST(req: NextRequest) {
         model: process.env.SCENE_MODEL || process.env.MODEL || "deepseek-v4-flash",
         messages: [{ role: "user", content: prompt }],
         thinking: { type: "disabled" },
+        response_format: { type: "json_object" },
         temperature: 0.7,
         max_tokens: maxTokens,
         stream: true,
@@ -151,18 +175,18 @@ export async function POST(req: NextRequest) {
           while (true) {
             const { done, value } = await reader.read();
             if (done) break;
-            for (const line of decoder.decode(value).split("\n").filter((l) => l.trim().startsWith("data:"))) {
+            for (const line of decoder.decode(value, { stream: true }).split("\n").filter((l) => l.trim().startsWith("data:"))) {
               const data = line.replace(/^data: /, "");
               if (data === "[DONE]") continue;
               try {
                 const chunk = JSON.parse(data);
                 const content = chunk.choices?.[0]?.delta?.content || "";
                 const finishReason = chunk.choices?.[0]?.finish_reason;
-                if (finishReason) console.log("[scene] finish_reason:", finishReason, "len:", fullText.length, "end:", fullText.slice(-100));
                 if (content) {
                   fullText += content;
                   controller.enqueue(encoder.encode(`data: ${JSON.stringify({ type: "delta", text: content })}\n\n`));
                 }
+                if (finishReason) console.log("[scene] finish_reason:", finishReason, "len:", fullText.length, "end:", fullText.slice(-100));
               } catch {}
             }
           }
@@ -170,15 +194,19 @@ export async function POST(req: NextRequest) {
           try {
             let jsonText = fullText.trim().replace(/```json\s*/g, "").replace(/```\s*/g, "");
             console.log("[scene] len:", fullText.length, "start:", jsonText.slice(0, 100));
-            const first = jsonText.indexOf("{");
-            const last = jsonText.lastIndexOf("}");
-            if (first !== -1 && last > first) {
-              try {
+            // Try direct parse first (works when response_format is respected)
+            try { parsed = JSON.parse(jsonText); } catch (e0) {
+              const pos = (e0 as SyntaxError).message.match(/position (\d+)/)?.[1];
+              if (pos) console.error("[scene] direct parse fail at pos", pos, "context:", jsonText.slice(Math.max(0, +pos-30), +pos+30));
+            }
+            if (!parsed) {
+              const first = jsonText.indexOf("{");
+              const last = jsonText.lastIndexOf("}");
+              if (first !== -1 && last > first) {
                 parsed = safeParseJSON(jsonText.substring(first, last + 1));
-              } catch (e2) {
-                console.error("[scene] safeParseJSON failed:", e2, jsonText.slice(0, 200));
               }
             }
+            if (!parsed) console.error("[scene] parse failed, tail:", jsonText.slice(-300));
           } catch (e) {
             console.error("JSON parse error:", e);
           }
